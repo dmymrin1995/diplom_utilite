@@ -19,7 +19,7 @@ def create_diplom (path_to_font, path_to_image, names):
         draw = ImageDraw.Draw(img)
         text_width, _ = draw.textsize(names, font = font)
         draw.text(((image_width - text_width) / 2, 1425), names, font=font, fill=(0, 0, 0))
-        img.save("{}.png".format(names))
+     return img.save("{}.png".format(names))
 
 if __name__ == "__main__":
     create_diplom (path_to_font, path_to_image, name_list)
